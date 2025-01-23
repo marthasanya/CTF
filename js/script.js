@@ -55,6 +55,42 @@ function checkScope() {
 //Calling the function
 checkScope();
 
+let userage = 20;
+let userAge = 20;
+if (userAge >= 18) {
+  console.log("You are an adult.");
+} else {
+  console.log("You are a minor.");
+}
+
+// Switch case
+let day = 3;
+switch (day) {
+  case 1:
+    console.log("Monday");
+    break;
+  case 2:
+    console.log("Tuesday");
+    break;
+  case 3:
+    console.log("Wednesday");
+    break;
+  default:
+    console.log("Invalid day");
+}
+
+// For loop (repeat code multiple times)
+for (let i = 0; i < 5; i++) {
+  console.log("Iteration: " + i);
+}
+
+// While loop (repeat code until a condition is false)
+let count = 0;
+while (count < 3) {
+  console.log("Count: " + count);
+  count++;
+}
+
 // Get references to the header and button elements
 const header = document.getElementById('header');
 const button = document.getElementById('change-background');
