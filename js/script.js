@@ -26,6 +26,35 @@ console.log(isEmployed);
 console.log(hobbies);
 console.log(person);
 
+// Function that greets the user by name
+function greet(name) {
+    console.log("Hello, " + "!");
+}
+
+// Calling the function with a parameter
+greet("John"); // Output: Hello, John!
+
+// Function with a return value
+function add(a, b) {
+    return a + b;
+}
+
+// Storing the result of the function
+let result = add(10, 65)
+console.log(result); // Output: 75
+
+// Example of scope 
+let globalVar = "I am global variable";
+
+function checkScope() {
+    let localVar = "I am a local variable";
+    console.log(globalVar);
+    console.log(localVar);
+}
+
+//Calling the function
+checkScope();
+
 // Get references to the header and button elements
 const header = document.getElementById('header');
 const button = document.getElementById('change-background');
