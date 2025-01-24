@@ -16,7 +16,7 @@ body {
 
 /* Header Styling */
 header {
-    background-color: #4CAF50;
+    background-color: #a33c26;
     color: white;
     padding: 20px;
     text-align: center;
@@ -46,7 +46,7 @@ section {
 }
 
 section h2 {
-    color: #4CAF50;
+    color: #a33c26;
     font-size: 1.8em;
 }
 
@@ -64,6 +64,65 @@ ul li code {
     background-color: #f1f1f1;
     padding: 5px;
     border-radius: 5px;
+}
+
+/* Form styling */
+form {
+    max-width: 400px;
+    margin: 0 auto; /* Center the form horizontally */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+}
+
+textarea {
+    resize: vertical; /* Allow vertical resizing only */
+    min-height: 100px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #07223f;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
 }
 
 /* Footer Styling */

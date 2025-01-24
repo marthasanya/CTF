@@ -1,59 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HTML Basics</title>
-    <link rel="stylesheet" href="css/style.css"> <!-- Link to your CSS file -->
-</head>
-<body>
-    <header>
-        <h1>Welcome to HTML Basics</h1>
-        <p>Your journey to mastering HTML starts here!</p>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header id="header">
+      <h1>Welcome to Html Basics</h1>
     </header>
-
     <main>
         <section>
-            <h2>About HTML</h2>
-            <p>HTML stands for HyperText Markup Language. It is used to structure web pages.</p>
+            <h2>About Me</h2>
+            <p>This is a paragraph about me.</p>
         </section>
-
         <section>
-            <h2>HTML Elements</h2>
-            <ul>
-                <li><strong>Headings:</strong> <code>&lt;h1&gt; to &lt;h6&gt;</code></li>
-                <li><strong>Paragraphs:</strong> <code>&lt;p&gt;</code></li>
-                <li><strong>Links:</strong> <code>&lt;a href="url"&gt;Link Text&lt;/a&gt;</code></li>
-                <li><strong>Images:</strong> <code>&lt;img src="path" alt="description"&gt;</code></li>
-                <li><strong>Lists:</strong> <code>&lt;ul&gt; for unordered lists</code></li>
-                <li><strong>Tables:</strong> <code>&lt;table&gt;</code></li>
-                <li><strong>Forms:</strong> <code>&lt;form&gt;</code> for collecting user input</li>
-            </ul>
+            <h2>My Projects</h2>
+            <p>Details about my projects will go here.</p>
         </section>
-
         <section>
-            <h2>Accessibility</h2>
-            <p>Using <strong>alt</strong> text for images helps users with disabilities:</p>
-            <ul>
-                <li><code>&lt;img src="path" alt="A description of the image"&gt;</code></li>
-            </ul>
-        </section>
-
-        <section>
-            <h2>Embedding Media</h2>
-            <p>Embed a video in your page using the <code>&lt;video&gt;</code> tag:</p>
-            <pre>
-            <code>&lt;video controls&gt;
-    &lt;source src="video.mp4" type="video/mp4"&gt;
-    Your browser does not support the video tag.
-&lt;/video&gt;</code>
-            </pre>
+            <form action="/submit" method="POST" aria-labelledby="contact-form">
+                <h2 id="contact-form">Contact Me</h2>
+                
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" aria-required="true" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" aria-required="true" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" aria-required="true" required></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <button type="submit">Send</button>
+                </div>
+            </form>   
         </section>
     </main>
-
     <footer>
-        <p>&copy; 2025 HTML Basics</p>
+        <p>Contact Information</p>
     </footer>
-</body>
+  </body>
 </html>
-
