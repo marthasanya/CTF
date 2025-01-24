@@ -90,6 +90,29 @@ while (count < 3) {
   console.log("Count: " + count);
   count++;
 }
+// Array example
+let fruits = ["apple", "banana", "cherry"];
+console.log(fruits[0]);  // Output: apple
+
+// Adding items to an array
+fruits.push("orange");
+console.log(fruits);  // Output: ["apple", "banana", "cherry", "orange"]
+
+// Looping through an array
+for (let i = 0; i < fruits.length; i++) {
+  console.log(fruits[i]);  // Output: each fruit in the array
+}
+
+// Object example
+let car = {
+  make: "Toyota",
+  model: "Corolla",
+  year: 2021
+};
+
+// Accessing properties of an object
+console.log(car.make);  // Output: Toyota
+console.log(car["model"]);  // Output: Corolla
 
 // Get references to the header and button elements
 const header = document.getElementById('header');
